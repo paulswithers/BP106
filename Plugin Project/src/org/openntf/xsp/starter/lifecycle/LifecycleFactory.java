@@ -4,7 +4,7 @@ import java.util.Iterator;
 
 import javax.faces.lifecycle.Lifecycle;
 
-import org.openntf.xsp.starter.Activator;
+import com.paulwithers.bp106.Activator;
 
 public class LifecycleFactory extends javax.faces.lifecycle.LifecycleFactory {
 	public static final String STARTER_LIFECYCLE_ID = "StarterLifecycle";

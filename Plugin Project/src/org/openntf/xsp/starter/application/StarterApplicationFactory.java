@@ -18,10 +18,9 @@ package org.openntf.xsp.starter.application;
 import javax.faces.application.Application;
 import javax.faces.application.ApplicationFactory;
 
-import org.openntf.xsp.starter.Activator;
-
 import com.ibm.xsp.application.ApplicationEx;
 import com.ibm.xsp.application.ApplicationFactoryImpl;
+import com.paulwithers.bp106.Activator;
 
 public class StarterApplicationFactory extends ApplicationFactoryImpl {
 	private final static boolean _debug = Activator._debug;

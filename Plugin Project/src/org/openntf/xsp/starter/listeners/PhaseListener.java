@@ -18,7 +18,7 @@ package org.openntf.xsp.starter.listeners;
 import javax.faces.event.PhaseEvent;
 import javax.faces.event.PhaseId;
 
-import org.openntf.xsp.starter.Activator;
+import com.paulwithers.bp106.Activator;
 
 public class PhaseListener extends AbstractListener implements javax.faces.event.PhaseListener {
 	public static final long serialVersionUID = -6528380677556637393L;

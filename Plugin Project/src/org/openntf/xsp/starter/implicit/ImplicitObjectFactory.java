@@ -19,10 +19,9 @@ import java.util.Map;
 
 import javax.faces.context.FacesContext;
 
-import org.openntf.xsp.starter.Activator;
-
 import com.ibm.xsp.context.FacesContextEx;
 import com.ibm.xsp.util.TypedUtil;
+import com.paulwithers.bp106.Activator;
 
 public class ImplicitObjectFactory implements com.ibm.xsp.el.ImplicitObjectFactory {
 	private final String[][] implicitObjectList = { { "server", ImplicitObject.class.getName() } };

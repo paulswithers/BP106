@@ -16,7 +16,7 @@
 package org.openntf.xsp.starter.application;
 
 import javax.faces.application.Application;
-import org.openntf.xsp.starter.Activator;
+
 import org.openntf.xsp.starter.listeners.ApplicationListener;
 import org.openntf.xsp.starter.listeners.SessionListener;
 import org.openntf.xsp.starter.listeners.VFSEvent;
@@ -25,6 +25,7 @@ import com.ibm.commons.vfs.VFS;
 import com.ibm.domino.xsp.module.nsf.ModuleClassLoader;
 import com.ibm.xsp.application.ApplicationEx;
 import com.ibm.xsp.application.DesignerApplicationEx;
+import com.paulwithers.bp106.Activator;
 
 public class StarterApplicationEx extends DesignerApplicationEx {
 	private final static boolean _debug = Activator._debug;

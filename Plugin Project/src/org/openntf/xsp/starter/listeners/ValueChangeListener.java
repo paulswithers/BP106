@@ -18,7 +18,7 @@ package org.openntf.xsp.starter.listeners;
 import javax.faces.event.AbortProcessingException;
 import javax.faces.event.ValueChangeEvent;
 
-import org.openntf.xsp.starter.Activator;
+import com.paulwithers.bp106.Activator;
 
 public class ValueChangeListener extends AbstractListener implements javax.faces.event.ValueChangeListener {
 	private final static boolean _debug = Activator._debug;

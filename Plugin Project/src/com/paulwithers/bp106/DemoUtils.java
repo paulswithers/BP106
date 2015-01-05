@@ -13,17 +13,8 @@
  * implied. See the License for the specific language governing 
  * permissions and limitations under the License.
  */
-package org.openntf.xsp.starter.resources;
+package com.paulwithers.bp106;
 
-import com.ibm.xsp.resource.DojoModulePathResource;
-import com.paulwithers.bp106.Activator;
-import com.paulwithers.bp106.Library;
-
-public class ModulePath extends DojoModulePathResource {
-	public final static String NAMESPACE = Library.LIBRARY_RESOURCE_NAMESPACE;
-
-	public ModulePath() {
-		super(NAMESPACE, "/.ibmxspres/." + NAMESPACE + "/" + Activator.getVersion());
-	}
+public class DemoUtils {
 
 }

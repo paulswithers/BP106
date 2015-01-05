@@ -19,9 +19,8 @@ import javax.faces.FacesException;
 import javax.faces.el.EvaluationException;
 import javax.faces.el.PropertyNotFoundException;
 
-import org.openntf.xsp.starter.Activator;
-
 import com.ibm.xsp.util.Delegation;
+import com.paulwithers.bp106.Activator;
 
 public class PropertyResolver extends javax.faces.el.PropertyResolver {
 	protected final javax.faces.el.PropertyResolver _resolver;

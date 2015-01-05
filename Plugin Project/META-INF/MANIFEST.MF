@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: XSP Starter Kit
-Bundle-SymbolicName: org.openntf.xsp.starter;singleton:=true
+Bundle-SymbolicName: com.paulwithers.bp106;singleton:=true
 Bundle-Version: 1.1.0.qualifier
-Bundle-Activator: org.openntf.xsp.starter.Activator
+Bundle-Activator: com.paulwithers.bp106.Activator
 Bundle-Vendor: GBS
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Import-Package: com.ibm.commons.util,
@@ -22,7 +22,7 @@ Import-Package: com.ibm.commons.util,
  org.eclipse.core.runtime,
  org.osgi.framework
 Bundle-ActivationPolicy: lazy
-Export-Package: org.openntf.xsp.starter,
+Export-Package: com.paulwithers.bp106,
  org.openntf.xsp.starter.application,
  org.openntf.xsp.starter.beans,
  org.openntf.xsp.starter.components,

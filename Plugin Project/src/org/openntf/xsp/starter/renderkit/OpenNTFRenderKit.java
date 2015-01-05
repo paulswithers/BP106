@@ -8,7 +8,7 @@ import javax.faces.context.ResponseWriter;
 import javax.faces.render.Renderer;
 import javax.faces.render.ResponseStateManager;
 
-import org.openntf.xsp.starter.Activator;
+import com.paulwithers.bp106.Activator;
 import com.sun.faces.renderkit.RenderKitImpl;
 
 public class OpenNTFRenderKit extends RenderKitImpl {

@@ -19,9 +19,8 @@ import javax.faces.FacesException;
 import javax.faces.context.FacesContext;
 import javax.faces.el.EvaluationException;
 
-import org.openntf.xsp.starter.Activator;
-
 import com.ibm.xsp.util.Delegation;
+import com.paulwithers.bp106.Activator;
 
 public class VariableResolver extends javax.faces.el.VariableResolver {
 	protected final javax.faces.el.VariableResolver _resolver;

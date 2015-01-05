@@ -21,12 +21,11 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.openntf.xsp.starter.Activator;
-import org.openntf.xsp.starter.util.LibraryUtils;
-
 import com.ibm.xsp.webapp.FacesResourceServlet;
 import com.ibm.xsp.webapp.resources.BundleResourceProvider;
 import com.ibm.xsp.webapp.resources.URLResourceProvider;
+import com.paulwithers.bp106.Activator;
+import com.paulwithers.bp106.DemoUtils;
 
 public class ResourceProvider extends BundleResourceProvider {
 	private final static boolean _debug = Activator._debug;
@@ -60,7 +59,7 @@ public class ResourceProvider extends BundleResourceProvider {
 	@Override
 	protected URL getResourceURL(HttpServletRequest request, String name) {
 		String path = BUNDLE_RES_PATH + name;
-		URL resourcePath = LibraryUtils.getResourceURL(getBundle(), path);
+		URL resourcePath = DemoUtils.getResourceURL(getBundle(), path);
 		return resourcePath;
 	}
 

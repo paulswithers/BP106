@@ -17,9 +17,9 @@ package org.openntf.xsp.starter.context;
 
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
-import org.openntf.xsp.starter.Activator;
 
 import com.ibm.xsp.domino.context.DominoFacesContext;
+import com.paulwithers.bp106.Activator;
 
 public class StarterFacesContext extends DominoFacesContext {
 

@@ -19,10 +19,9 @@ package org.openntf.xsp.starter.application;
 import javax.faces.FacesException;
 import javax.faces.context.FacesContext;
 
-import org.openntf.xsp.starter.Activator;
-
 import com.ibm.xsp.application.NavigationHandlerImpl;
 import com.ibm.xsp.util.Delegation;
+import com.paulwithers.bp106.Activator;
 
 public class NavigationHandler extends javax.faces.application.NavigationHandler {
 	private final javax.faces.application.NavigationHandler _delegate;

@@ -1,8 +1,7 @@
 package org.openntf.xsp.starter.servlet;
 
-import org.openntf.xsp.starter.Activator;
-
 import com.ibm.xsp.webapp.DesignerFacesServlet;
+import com.paulwithers.bp106.Activator;
 
 public class StarterServlet extends DesignerFacesServlet {
 	private final static boolean _debug = Activator._debug;

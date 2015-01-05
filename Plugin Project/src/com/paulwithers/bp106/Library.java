@@ -13,14 +13,12 @@
  * implied. See the License for the specific language governing 
  * permissions and limitations under the License.
  */
-package org.openntf.xsp.starter.library;
-
-import org.openntf.xsp.starter.Activator;
+package com.paulwithers.bp106;
 
 import com.ibm.xsp.library.AbstractXspLibrary;
 
-public class StarterLibrary extends AbstractXspLibrary {
-	private final static String LIBRARY_ID = StarterLibrary.class.getName();
+public class Library extends AbstractXspLibrary {
+	private final static String LIBRARY_ID = Library.class.getName();
 	// change this string to establish a namespace for your resources:
 	public final static String LIBRARY_RESOURCE_NAMESPACE = "Starter";
 	public final static String LIBRARY_BEAN_PREFIX = "Starter";
@@ -28,13 +26,13 @@ public class StarterLibrary extends AbstractXspLibrary {
 
 	static {
 		if (_debug) {
-			System.out.println(StarterLibrary.class.getName() + " loaded");
+			System.out.println(Library.class.getName() + " loaded");
 		}
 	}
 
-	public StarterLibrary() {
+	public Library() {
 		if (_debug) {
-			System.out.println(StarterLibrary.class.getName() + " created");
+			System.out.println(Library.class.getName() + " created");
 		}
 	}
 

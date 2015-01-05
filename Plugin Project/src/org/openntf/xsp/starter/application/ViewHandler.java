@@ -22,7 +22,7 @@ import javax.faces.FacesException;
 import javax.faces.component.UIViewRoot;
 import javax.faces.context.FacesContext;
 
-import org.openntf.xsp.starter.Activator;
+import com.paulwithers.bp106.Activator;
 
 public class ViewHandler extends com.ibm.xsp.application.ViewHandlerExImpl {
 	private final javax.faces.application.ViewHandler _handler;

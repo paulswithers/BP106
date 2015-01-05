@@ -4,7 +4,7 @@
    <extension
          point="com.ibm.commons.Extension">
       <service
-            class="org.openntf.xsp.starter.library.StarterLibrary"
+            class="com.paulwithers.bp106.Library"
             type="com.ibm.xsp.Library">
       </service>
    </extension>

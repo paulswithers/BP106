@@ -17,11 +17,10 @@ package org.openntf.xsp.starter.beans;
 
 import java.io.Serializable;
 
-import org.openntf.xsp.starter.Activator;
-import org.openntf.xsp.starter.library.StarterLibrary;
-import org.openntf.xsp.starter.util.LibraryUtils;
-
 import com.ibm.xsp.context.FacesContextEx;
+import com.paulwithers.bp106.Activator;
+import com.paulwithers.bp106.Library;
+import com.paulwithers.bp106.DemoUtils;
 
 public class AbstractBean implements Serializable {
 	private final static boolean _debug = Activator._debug;
@@ -29,7 +28,7 @@ public class AbstractBean implements Serializable {
 
 	public static AbstractBean getCurrentInstance(String suffix) {
 		AbstractBean result = null;
-		result = (AbstractBean) LibraryUtils.resolveVariable(FacesContextEx.getCurrentInstance(), StarterLibrary.LIBRARY_BEAN_PREFIX
+		result = (AbstractBean) DemoUtils.resolveVariable(FacesContextEx.getCurrentInstance(), Library.LIBRARY_BEAN_PREFIX
 				+ suffix);
 		return result;
 	}

@@ -1,6 +1,6 @@
 package org.openntf.xsp.starter.listeners;
 
-import org.openntf.xsp.starter.Activator;
+import com.paulwithers.bp106.Activator;
 import com.sun.faces.application.ActionListenerImpl;
 
 public class ActionListener extends ActionListenerImpl {

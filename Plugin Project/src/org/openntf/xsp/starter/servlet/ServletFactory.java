@@ -5,11 +5,11 @@ import java.util.Map;
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 
-import org.openntf.xsp.starter.Activator;
 import com.ibm.commons.util.PathUtil;
 import com.ibm.designer.runtime.domino.adapter.ComponentModule;
 import com.ibm.designer.runtime.domino.adapter.IServletFactory;
 import com.ibm.designer.runtime.domino.adapter.ServletMatch;
+import com.paulwithers.bp106.Activator;
 
 public class ServletFactory implements IServletFactory {
 	/*

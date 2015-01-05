@@ -13,14 +13,14 @@
  * implied. See the License for the specific language governing 
  * permissions and limitations under the License.
  */
-package org.openntf.xsp.starter;
+package com.paulwithers.bp106;
 
 import org.eclipse.core.runtime.Plugin;
 import org.osgi.framework.BundleContext;
 
 public class Activator extends Plugin {
 	public static final String PLUGIN_ID = Activator.class.getPackage().getName();
-	public static final boolean _debug = false;
+	public static final boolean _debug = true;
 
 	public static Activator instance;
 
@@ -40,7 +40,8 @@ public class Activator extends Plugin {
 	@Override
 	public void start(BundleContext context) throws Exception {
 		super.start(context);
-		// version = (String) context.getBundle().getHeaders().get("Bundle-Version");
+		// version = (String)
+		// context.getBundle().getHeaders().get("Bundle-Version");
 	}
 
 	public static Activator getDefault() {

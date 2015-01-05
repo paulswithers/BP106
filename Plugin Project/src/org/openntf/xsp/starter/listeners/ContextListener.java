@@ -17,9 +17,8 @@ package org.openntf.xsp.starter.listeners;
 
 import javax.faces.context.FacesContext;
 
-import org.openntf.xsp.starter.Activator;
-
 import com.ibm.xsp.event.FacesContextListener;
+import com.paulwithers.bp106.Activator;
 
 public class ContextListener extends AbstractListener implements FacesContextListener {
 	public final static boolean ATTACH_LISTENER = true; // change this to false if you don't want to bother.

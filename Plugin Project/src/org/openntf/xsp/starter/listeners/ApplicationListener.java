@@ -15,9 +15,8 @@
  */
 package org.openntf.xsp.starter.listeners;
 
-import org.openntf.xsp.starter.Activator;
-
 import com.ibm.xsp.application.ApplicationEx;
+import com.paulwithers.bp106.Activator;
 
 public class ApplicationListener implements com.ibm.xsp.application.events.ApplicationListener {
 	public final static boolean ATTACH_LISTENER = true; // change this to false if you don't want to bother.

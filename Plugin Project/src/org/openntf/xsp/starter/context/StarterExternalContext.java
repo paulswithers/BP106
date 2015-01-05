@@ -12,11 +12,10 @@ import java.util.Set;
 
 import javax.faces.context.ExternalContext;
 
-import org.openntf.xsp.starter.Activator;
-
 import com.ibm.xsp.context.Conversation;
 import com.ibm.xsp.context.ExternalContextEx;
 import com.ibm.xsp.domino.context.DominoExternalContext;
+import com.paulwithers.bp106.Activator;
 
 public class StarterExternalContext extends ExternalContextEx {
 	private final DominoExternalContext delegate;

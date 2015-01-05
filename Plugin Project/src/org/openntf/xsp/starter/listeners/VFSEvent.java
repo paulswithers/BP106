@@ -1,9 +1,8 @@
 package org.openntf.xsp.starter.listeners;
 
-import org.openntf.xsp.starter.Activator;
-
 import com.ibm.commons.vfs.VFS;
 import com.ibm.commons.vfs.VFSEventAdapter;
+import com.paulwithers.bp106.Activator;
 
 public class VFSEvent extends VFSEventAdapter {
 	private final static boolean _debug = Activator._debug;

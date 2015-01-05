@@ -17,11 +17,11 @@ package org.openntf.xsp.starter.implicit;
 
 import java.io.Serializable;
 
-import org.openntf.xsp.starter.Activator;
 import org.openntf.xsp.starter.beans.ServerBean;
 
 import com.ibm.xsp.FacesExceptionEx;
 import com.ibm.xsp.model.DataObject;
+import com.paulwithers.bp106.Activator;
 
 public class ImplicitObject implements DataObject {
 	private final static boolean _debug = Activator._debug;

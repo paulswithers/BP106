@@ -20,12 +20,12 @@ import javax.faces.context.FacesContext;
 import javax.faces.context.FacesContextFactory;
 import javax.faces.lifecycle.Lifecycle;
 
-import org.openntf.xsp.starter.Activator;
 import org.openntf.xsp.starter.listeners.ContextListener;
 
 import com.ibm.xsp.FacesExceptionEx;
 import com.ibm.xsp.context.FacesContextFactoryImpl;
 import com.ibm.xsp.domino.context.DominoFacesContextFactoryImpl;
+import com.paulwithers.bp106.Activator;
 
 public class StarterFacesContextFactory extends FacesContextFactory {
 	private final FacesContextFactory _delegate;
