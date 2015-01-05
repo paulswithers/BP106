@@ -1,11 +1,11 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: XSP Starter Kit
+Bundle-Name: BP106
 Bundle-SymbolicName: com.paulwithers.bp106;singleton:=true
 Bundle-Version: 1.1.0.qualifier
 Bundle-Activator: com.paulwithers.bp106.Activator
-Bundle-Vendor: GBS
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: Paul Withers
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: com.ibm.commons.util,
  com.ibm.commons.vfs,
  com.ibm.designer.runtime,
@@ -22,19 +22,5 @@ Import-Package: com.ibm.commons.util,
  org.eclipse.core.runtime,
  org.osgi.framework
 Bundle-ActivationPolicy: lazy
-Export-Package: com.paulwithers.bp106,
- org.openntf.xsp.starter.application,
- org.openntf.xsp.starter.beans,
- org.openntf.xsp.starter.components,
- org.openntf.xsp.starter.context,
- org.openntf.xsp.starter.implicit,
- org.openntf.xsp.starter.library,
- org.openntf.xsp.starter.lifecycle,
- org.openntf.xsp.starter.listeners,
- org.openntf.xsp.starter.renderkit,
- org.openntf.xsp.starter.resolver,
- org.openntf.xsp.starter.resources,
- org.openntf.xsp.starter.servlet,
- org.openntf.xsp.starter.ssjs,
- org.openntf.xsp.starter.util
-Require-Bundle: com.ibm.xsp.designer;bundle-version="8.5.2"
+Export-Package: com.paulwithers.bp106
+Require-Bundle: com.ibm.xsp.designer;bundle-version="9.0.0"

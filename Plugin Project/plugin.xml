@@ -8,31 +8,4 @@
             type="com.ibm.xsp.Library">
       </service>
    </extension>
-<extension point="com.ibm.commons.Extension">
-         <service
-            type="com.ibm.xsp.resource.DojoModulePathResource"
-            class="org.openntf.xsp.starter.resources.ModulePath" />
-   </extension>
-   <extension point="com.ibm.commons.Extension">
-      <service type="com.ibm.xsp.GlobalResourceProvider" class="org.openntf.xsp.starter.resources.ResourceProvider" />
-   </extension>
-    <extension point="com.ibm.commons.Extension">
-         <service type="com.ibm.xsp.RequestParameters" class="org.openntf.xsp.starter.resources.RequestCustomizerFactory" />
-   </extension>
-   <extension point="com.ibm.commons.Extension">
-         <service type="com.ibm.xsp.JavaScriptLibFactory" class="org.openntf.xsp.starter.ssjs.StarterFactory" />
-   </extension>
-     <extension point="com.ibm.commons.Extension">
-         <service type="com.ibm.designer.runtime.extensions.JavaScriptProvider" class="org.openntf.xsp.starter.ssjs.StarterDomJavaScriptExtension" />
-   </extension>
-    <extension point="com.ibm.commons.Extension">
-         <service type="com.ibm.xsp.library.Contributor" class="org.openntf.xsp.starter.library.StarterContributor" />
-   </extension>
- <!--   <extension
-          point="com.ibm.commons.Extension">
-       <service
-             type="com.ibm.xsp.adapter.servletFactory" class="org.openntf.xsp.starter.servlet.ServletFactory">
-       </service>
-    </extension>
-    -->
 </plugin>
