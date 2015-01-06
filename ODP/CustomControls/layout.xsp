@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xe="http://www.ibm.com/xsp/coreex">
+
+	<xe:applicationLayout id="applicationLayout1">
+		<xp:callback facetName="facetMiddle" id="facetMiddle"></xp:callback>
+		<xp:this.facets>
+			<xe:navigator id="navigator1" xp:key="LeftColumn">
+				<xe:this.treeNodes>
+					<xe:pageTreeNode label="Home" page="/Home.xsp"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Demo Utils" page="/DemoUtil.xsp"></xe:pageTreeNode>
+				</xe:this.treeNodes>
+			</xe:navigator>
+		</xp:this.facets>
+		<xe:this.configuration>
+			<xe:oneuiApplication placeBar="false" legal="false"
+				titleBarName="#{database.title}" productLogo="/ICONUKLogo250.png"
+				productLogoAlt="ICON UK" productLogoHeight="30px">
+				<xe:this.footerLinks>
+					
+					
+				</xe:this.footerLinks>
+			</xe:oneuiApplication>
+		</xe:this.configuration>
+	</xe:applicationLayout>
+</xp:view>

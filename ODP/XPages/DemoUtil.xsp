@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+	<xc:layout>
+		<xp:this.facets>
+			<xp:panel xp:key="facetMiddle">
+				<xp:div styleClass="lotusInfoBox" style="clear:right;text-align:left;">
+					<xp:text escape="true" id="computedField1"
+						value="This page demonstrates security exceptions when using restricted operations within an NSF and using a plugin to avoid them">
+					</xp:text>
+				</xp:div>
+
+				<xp:button value="Dump UserBean (NSF)" id="button1">
+					<xp:eventHandler event="onclick" submit="true" refreshMode="full">
+						<xp:this.action><![CDATA[#{javascript:org.iconuk.Utils.dumpUserBeanNSF();}]]></xp:this.action>
+					</xp:eventHandler>
+				</xp:button>
+
+				<xp:button value="Dump UserBean (NSF Privileged)" id="button3">
+					<xp:eventHandler event="onclick" submit="true" refreshMode="full">
+						<xp:this.action><![CDATA[#{javascript:org.iconuk.Utils.dumpUserBeanNSFPrivileged();}]]></xp:this.action>
+					</xp:eventHandler>
+				</xp:button>
+
+				<xp:button value="Dump UserBean (Plugin) Basic" id="button2">
+					<xp:eventHandler event="onclick" submit="true" refreshMode="partial" refreshId="returnDiv">
+						<xp:this.action><![CDATA[#{javascript:org.iconuk.Utils.dumpUserBeanPluginBasic();}]]></xp:this.action>
+					</xp:eventHandler>
+				</xp:button>
+
+				<xp:button value="Dump UserBean (Plugin) Styled" id="button4">
+					<xp:eventHandler event="onclick" submit="true" refreshMode="partial" refreshId="returnDiv">
+						<xp:this.action><![CDATA[#{javascript:org.iconuk.Utils.dumpUserBeanPluginStyled();}]]></xp:this.action>
+					</xp:eventHandler>
+				</xp:button>
+
+				<xp:div id="returnDiv">
+					<xp:text escape="false" id="computedField2" value="#{viewScope.dumpValue}"></xp:text>
+				</xp:div>
+			</xp:panel>
+		</xp:this.facets>
+	</xc:layout>
+</xp:view>

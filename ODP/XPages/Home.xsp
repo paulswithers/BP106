@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom"
+	xmlns:IconUk="http://www.paulwithers.com/xsp/IconUk">
+	<xc:layout>
+		<xp:this.facets>
+			<xp:panel xp:key="facetMiddle">
+				<xp:div styleClass="lotusInfoBox"
+					style="clear:right;text-align:left;">
+					<xp:text escape="true" id="computedField1"
+						value="Please select one of the pages on the left">
+					</xp:text>
+				</xp:div>
+			</xp:panel>
+		</xp:this.facets>
+	</xc:layout>
+</xp:view>
