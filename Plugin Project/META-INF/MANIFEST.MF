@@ -6,21 +6,10 @@ Bundle-Version: 1.1.0.qualifier
 Bundle-Activator: com.paulwithers.bp106.Activator
 Bundle-Vendor: Paul Withers
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Import-Package: com.ibm.commons.util,
- com.ibm.commons.vfs,
- com.ibm.designer.runtime,
- com.ibm.designer.runtime.domino.adapter,
- com.ibm.designer.runtime.domino.bootstrap.adapter,
- com.ibm.domino.xsp.module.nsf,
- com.ibm.jscript,
- com.ibm.xsp.application,
- com.ibm.xsp.webapp,
- javax.faces.application,
- javax.faces.context,
- javax.faces.webapp,
- javax.servlet;version="2.5.0",
- org.eclipse.core.runtime,
- org.osgi.framework
+Import-Package: org.apache.commons.lang3.builder,
+ org.eclipse.core.runtime;version="3.4.0",
+ org.osgi.framework;version="1.4.0"
 Bundle-ActivationPolicy: lazy
 Export-Package: com.paulwithers.bp106
-Require-Bundle: com.ibm.xsp.designer;bundle-version="9.0.0"
+Require-Bundle: com.ibm.xsp.designer;bundle-version="9.0.0",
+ com.paulwithers.bp106.libraries;bundle-version="1.0.0";visibility:=reexport
