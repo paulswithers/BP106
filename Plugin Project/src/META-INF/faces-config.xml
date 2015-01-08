@@ -1,0 +1,9 @@
+<faces-config>
+	<render-kit>
+		<renderer id="HtmlSeparator">
+			<component-family>javax.faces.Output</component-family>
+			<renderer-type>com.paulwithers.bp106.HtmlSeparator</renderer-type>
+			<renderer-class>com.paulwithers.bp106.renderkit.html_extended.HtmlSeparatorRenderer</renderer-class>
+		</renderer>
+	</render-kit>
+</faces-config>

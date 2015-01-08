@@ -1,0 +1,51 @@
+<faces-config>
+	<faces-config-extension>
+		<namespace-uri>http://www.paulwithers.com/xsp/bp106</namespace-uri>
+		<default-prefix>bp106</default-prefix>
+	</faces-config-extension>
+	<component>
+		<description>Base component definition for HTML Separator</description>
+		<display-name>HTML Separator</display-name>
+		<component-type>com.paulwithers.bp106.HtmlSeparator</component-type>
+		<component-class>com.paulwithers.bp106.components.HtmlSeparator</component-class>
+		<component-family>com.paulwithers.bp106.HtmlSeparator</component-family>
+		<component-extension>
+			<base-component-type>com.ibm.xsp.Tag</base-component-type>
+			<component-family>com.ibm.xsp.Tag</component-family>
+			<renderer-type>com.paulwithers.bp106.HtmlSeparator</renderer-type>
+			<tag-name>htmlSeparator</tag-name>
+			<designer-extension>
+				<generate-id>false</generate-id>
+				<in-palette>true</in-palette>
+				        <render-markup>
+							&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+							&lt;xp:view xmlns:xp="http://www.ibm.com/xsp/core"&gt;
+							&lt;xp:label value="[SPACE] or [NEW LINE]" id="label1"&gt;
+							&lt;/xp:label&gt;
+							&lt;/xp:view&gt;
+						</render-markup>
+			</designer-extension>
+		</component-extension>
+		<property>
+			<description>Type of separator</description>
+			<display-name>Separator Type</display-name>
+			<property-name>separatorType</property-name>
+ 			<property-class>java.lang.String</property-class>
+			<property-extension>
+				<designer-extension>
+					<editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+					<editor-parameter>
+						New Line
+						Space
+					</editor-parameter>
+				</designer-extension>
+				<required>true</required>
+			</property-extension>
+		</property>
+		<property>
+			<description>Number of repeats</description>
+			<property-name>count</property-name>
+			<property-class>int</property-class>
+		</property>
+	</component>
+</faces-config>

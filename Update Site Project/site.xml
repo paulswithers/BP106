@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/com.paulwithers.bp106.feature_1.0.0.201501061336.jar" id="com.paulwithers.bp106.feature" version="1.0.0.201501061336">
+   <feature url="features/com.paulwithers.bp106.feature_1.0.0.201501061724.jar" id="com.paulwithers.bp106.feature" version="1.0.0.201501061724">
       <category name="bp106"/>
    </feature>
    <category-def name="bp106" label="BP 106"/>

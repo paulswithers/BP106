@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom"
+	xmlns:bp106="http://www.paulwithers.com/xsp/bp106">
+	<xc:layout>
+		<xp:this.facets>
+			<xp:panel xp:key="facetMiddle">
+				<xp:text escape="true" id="computedField2"
+					value="Here is a component with five spaces **START**">
+				</xp:text>
+				<bp106:htmlSeparator count="5" separatorType="Space"></bp106:htmlSeparator>
+				<xp:text escape="true" id="computedField3" value="**END**">
+				</xp:text>
+				<xp:text escape="true" id="computedField4"
+					value="Here is a component with five blank lines **START**">
+				</xp:text>
+				<bp106:htmlSeparator count="5" separatorType="New Line"></bp106:htmlSeparator>
+				<xp:text escape="true" id="computedField5" value="**END**">
+				</xp:text>
+
+				<xp:div id="dynamicArea">
+					<xp:text value="Dynamic Spacer!!" tagName="h3"></xp:text>
+					<xp:label value="Type" id="label1" for="comboBox1"></xp:label>
+					<xp:comboBox id="comboBox1" value="#{viewScope.separatorType}">
+						<xp:selectItem itemLabel="Space" itemValue="Space"></xp:selectItem>
+						<xp:selectItem itemLabel="New Line" itemValue="New Line"></xp:selectItem>
+					</xp:comboBox>
+					<bp106:htmlSeparator count="5" separatorType="Space"></bp106:htmlSeparator>
+					<xp:label value="Count" id="label2" for="inputText1"></xp:label>
+					<xp:inputText id="inputText1" value="#{viewScope.count}">
+						<xp:this.converter>
+							<xp:convertNumber type="number"
+								integerOnly="true">
+							</xp:convertNumber>
+						</xp:this.converter>
+					</xp:inputText>
+					<bp106:htmlSeparator count="2" separatorType="Space"></bp106:htmlSeparator>
+					<xp:button value="Refresh" id="button1">
+						<xp:eventHandler event="onclick" submit="true"
+							refreshMode="partial" refreshId="dynamicArea">
+						</xp:eventHandler></xp:button>
+					<xp:br></xp:br>
+					<!-- This one's dynamic -->
+					Start
+					<bp106:htmlSeparator count="#{javascript:viewScope.count}"
+						separatorType="#{javascript:viewScope.separatorType}"></bp106:htmlSeparator>End
+				</xp:div>
+
+			</xp:panel>
+		</xp:this.facets>
+	</xc:layout>
+</xp:view>

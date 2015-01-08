@@ -53,14 +53,14 @@ public class Library extends AbstractXspLibrary {
 
 	@Override
 	public String[] getXspConfigFiles() {
-		String[] files = new String[] {};
+		String[] files = new String[] { "META-INF/components.xsp-config" };
 
 		return files;
 	}
 
 	@Override
 	public String[] getFacesConfigFiles() {
-		String[] files = new String[] {};
+		String[] files = new String[] { "META-INF/faces-config.xml" };
 		return files;
 	}
 
